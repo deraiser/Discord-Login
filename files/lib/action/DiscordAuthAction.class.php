@@ -155,7 +155,7 @@ class DiscordAuthAction extends AbstractOauth2Action
      */
     protected function supportsState(): bool
     {
-        return true;
+        return false;
     }
 
 }

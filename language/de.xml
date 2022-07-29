@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/5.4/language.xsd" languagecode="de" languagename="Deutsch">
+    <category name="wcf.acp.option">
+        <item name="wcf.acp.option.discord_client_id"><![CDATA[Discord Client-ID]]></item>
+        <item name="wcf.acp.option.discord_client_id.description"><![CDATA[{if LANGUAGE_USE_INFORMAL_VARIANT}Du kannst deine{else}Sie können Ihre{/if} Client ID und {if LANGUAGE_USE_INFORMAL_VARIANT}deinen{else}Ihren{/if} Client Secret bei <a href="https://discord.com/developers/applications/me" class="externalURL">Discord</a> anfordern. Die Redirect-URI ist: {link controller="DiscordAuth" forceFrontend=true}{/link}]]></item>
+        <item name="wcf.acp.option.discord_client_secret"><![CDATA[Discord Client-Secret]]></item>
+    </category>
+    
+    <category name="wcf.user.3rdparty">
+        <item name="wcf.user.3rdparty.discord"><![CDATA[Discord]]></item>
+        <item name="wcf.user.3rdparty.discord.connect"><![CDATA[Mit Discord-Konto {if $__wcf->session->getVar('__3rdPartyProvider') === 'discord'}(„{$__wcf->session->getVar('__oauthUser')->getUsername()}“){/if} verknüpfen.]]></item>
+        <item name="wcf.user.3rdparty.discord.connect.error.inuse"><![CDATA[{if LANGUAGE_USE_INFORMAL_VARIANT}Dein{else}Ihr{/if} Discord-Konto ist bereits mit einem anderen Benutzerkonto verknüpft.]]></item>
+        <item name="wcf.user.3rdparty.discord.connect.success"><![CDATA[{if LANGUAGE_USE_INFORMAL_VARIANT}Dein{else}Ihr{/if} Benutzerkonto wurde erfolgreich mit {if LANGUAGE_USE_INFORMAL_VARIANT}deinem{else}Ihrem{/if} Discord-Konto verknüpft.]]></item>
+        <item name="wcf.user.3rdparty.discord.disconnect"><![CDATA[Verknüpfung mit Discord trennen]]></item>
+        <item name="wcf.user.3rdparty.discord.disconnect.success"><![CDATA[Die Verknüpfung mit {if LANGUAGE_USE_INFORMAL_VARIANT}deinem{else}Ihrem{/if} Discord-Konto wurde erfolgreich getrennt.]]></item>
+        <item name="wcf.user.3rdparty.discord.login"><![CDATA[Mit Discord anmelden]]></item>
+        <item name="wcf.user.3rdparty.discord.register"><![CDATA[{if LANGUAGE_USE_INFORMAL_VARIANT}Du erstellst{else}Sie erstellen{/if} einen Account über <span class="icon icon16 fa-discord"></span>&nbsp;Discord. Der Benutzername und {if LANGUAGE_USE_INFORMAL_VARIANT}deine{else}Ihre{/if} E-Mail-Adresse wurden daher bereits ausgefüllt.]]></item>
+    </category>
+</language>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/5.4/language.xsd" languagecode="en" languagename="English">
+    <category name="wcf.acp.option">
+        <item name="wcf.acp.option.discord_client_id"><![CDATA[Discord Client-ID]]></item>
+        <item name="wcf.acp.option.discord_client_id.description"><![CDATA[You can request your Client ID and Client Secret from <a href="https://discord.com/developers/applications/me" class="externalURL">Discord</a>. The redirect URI is: {link controller="DiscordAuth" forceFrontend=true}{/link}]]></item>
+        <item name="wcf.acp.option.discord_client_secret"><![CDATA[Discord Client-Secret]]></item>
+    </category>
+    
+    <category name="wcf.user.3rdparty">
+        <item name="wcf.user.3rdparty.discord"><![CDATA[Discord]]></item>
+        <item name="wcf.user.3rdparty.discord.connect"><![CDATA[Connect with your Discord account {if $__wcf->session->getVar('__3rdPartyProvider') === 'discord'}(„{$__wcf->session->getVar('__oauthUser')->getUsername()}“){/if}.]]></item>
+        <item name="wcf.user.3rdparty.discord.connect.error.inuse"><![CDATA[Your Discord account is already connected to a different user.]]></item>
+        <item name="wcf.user.3rdparty.discord.connect.success"><![CDATA[Your user account has been connected with Discord.]]></item>
+        <item name="wcf.user.3rdparty.discord.disconnect"><![CDATA[Cancel connection with Discord]]></item>
+        <item name="wcf.user.3rdparty.discord.disconnect.success"><![CDATA[Your account is no longer connected with Discord.]]></item>
+        <item name="wcf.user.3rdparty.discord.login"><![CDATA[Login with Discord]]></item>
+        <item name="wcf.user.3rdparty.discord.register"><![CDATA[You are creating an account through <span class="icon icon16 fa-discord"></span>&nbsp;Discord. The username and your email address have therefore already been entered.]]></item>
+    </category>
+</language>

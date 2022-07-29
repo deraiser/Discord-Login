@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/5.4/eventListener.xsd">
+    <import>
+        <eventlistener name="discordAccountManagement">
+            <eventclassname>wcf\form\AccountManagementForm</eventclassname>
+            <eventname>assignVariables,readFormParameters,saved</eventname>
+            <listenerclassname>wcf\system\event\listener\DiscordAccountManagementListener</listenerclassname>
+            <environment>user</environment>
+        </eventlistener>
+        <eventlistener name="discordRegister">
+            <eventclassname>wcf\form\RegisterForm</eventclassname>
+            <eventname>registerVia3rdParty,saved</eventname>
+            <listenerclassname>wcf\system\event\listener\DiscordRegisterListener</listenerclassname>
+            <environment>user</environment>
+        </eventlistener>
+    </import>
+</data>
